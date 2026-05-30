@@ -12,7 +12,7 @@
 			"value": ""
 		},
 		"ls_REST_properties_typeProperties_url": {
-			"value": "https://pokeapi.co/api/v2/pokemon/ditto"
+			"value": "https://pokeapi.co/api/v2/pokemon/"
 		},
 		"ls_database_properties_typeProperties_server": {
 			"value": "dfproservernaiya.database.windows.net"
