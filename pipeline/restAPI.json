@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "EndPoint",
+				"name": "Web",
 				"type": "WebActivity",
 				"dependsOn": [],
 				"policy": {
@@ -16,18 +16,15 @@
 				"userProperties": [],
 				"typeProperties": {
 					"method": "GET",
-					"url": {
-						"value": "https://pokeapi.co/api/v2/pokemon/ditto",
-						"type": "Expression"
-					}
+					"url": "https://pokeapi.co/api/v2/pokemon/"
 				}
 			},
 			{
-				"name": "CopyAllData",
+				"name": "Copy data",
 				"type": "Copy",
 				"dependsOn": [
 					{
-						"activity": "EndPoint",
+						"activity": "Web",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -48,7 +45,7 @@
 						"requestInterval": "00.00:00:00.010",
 						"requestMethod": "GET",
 						"paginationRules": {
-							"AbsoluteUrl": "$.next"
+							"QueryParameters.offset": "RANGE:0:1350:20"
 						}
 					},
 					"sink": {
@@ -64,13 +61,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "ds_rest",
+						"referenceName": "api_ds",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "ds_API",
+						"referenceName": "Json",
 						"type": "DatasetReference"
 					}
 				]
