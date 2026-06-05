@@ -1,20 +1,7 @@
 # ADF_PRO
 
 # Azure Data Factory Practice
-
 This repository contains my hands-on practice and learning work in Azure Data Factory (ADF).
-
-## Topics Covered
-- ETL Pipelines
-- Copy Activity
-- Lookup Activity
-- Dynamic Pipelines
-- REST API Integration
-- Data Ingestion Workflows
-- ForEach Activity
-- Switch Activity
-- Incremental Load
-- Data Flows
 
 # 1.Ingestion(Incremental Load)
 <img width="1822" height="846" alt="image" src="https://github.com/user-attachments/assets/ba208e89-e09f-4c46-b0af-e86ba6361da3" />
@@ -22,7 +9,7 @@ This repository contains my hands-on practice and learning work in Azure Data Fa
 # 2.Ingestion(Rest API)
 <img width="1680" height="862" alt="image" src="https://github.com/user-attachments/assets/38aef24e-6157-496a-8aa2-8d34925bc7ad" />
 
-# 3.Router
+# 3.Router (Data is organized into separate folders based on entity/table name.) - Folder Based Partitioning
 <img width="1830" height="912" alt="image" src="https://github.com/user-attachments/assets/d09e1fc3-e68f-4c7a-9f4f-83ba8a699d7a" />
 <img width="1517" height="896" alt="image" src="https://github.com/user-attachments/assets/d76e2a13-4141-45e3-bfa9-19db3c9b590c" />
 
